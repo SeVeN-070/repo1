@@ -5,16 +5,16 @@ jobs:
   primer-job:
     runs-on: ubuntu-latest
     steps:
-        name: Descargar el código
-        uses: actions/checkout@v4
+      -  name: Descargar el código
+         uses: actions/checkout@v4
 
-        name: Configurar python
-        uses: actions/setup-python@v5
-        with:
+      -  name: Configurar python
+         uses: actions/setup-python@v5
+         with:
             python-version: '3.12'
         
-        name: Ejecutar código
-        run: python ejemplo.py
+      -  name: Ejecutar código
+         run: python ejemplo.py
 
 
       
